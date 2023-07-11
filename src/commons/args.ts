@@ -37,7 +37,9 @@ export function extractGithubSettings(githubContext: Context): GithubSettings {
 }
 
 export function extractActionOptions(): ActionOptions {
-    const reportPaths: string[] = (core.getInput('paths') || '').split(',');
+    const reportPaths: string[] = (core.getInput('report-paths') || '').split(
+        ','
+    );
 
     const minOverallInstructionsCoverage: number = parseNumber(
         core.getInput('min-overall-instructions-coverage')
@@ -64,7 +66,7 @@ export function extractActionOptions(): ActionOptions {
         'delete-previous-comment'
     );
 
-    const githubToken = core.getInput('github_token');
+    const githubToken = core.getInput('github-token');
 
     return {
         pullRequestTitle,

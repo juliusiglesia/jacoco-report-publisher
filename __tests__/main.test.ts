@@ -5,14 +5,14 @@ import { run } from '../src/main';
 
 describe('test jacoco reporter flow', function () {
     const mockInputs: { [key: string]: string } = {
-        paths: './__tests__/__fixtures__/input/report.xml',
+        'report-paths': './__tests__/__fixtures__/input/report.xml',
         'min-overall-instructions-coverage': '45',
         'min-overall-branch-coverage': '50',
-        'min-changed-files-instructions-coverage': '45',
-        'min-changed-files-branch-coverage': '80',
+        'min-modified-files-instructions-coverage': '45',
+        'min-modified-files-branch-coverage': '80',
         'update-previous-comment': 'false',
         'delete-previous-comment': 'false',
-        token: 'secret-token'
+        'github-token': 'secret-token'
     };
 
     const mockListComments = jest.fn();

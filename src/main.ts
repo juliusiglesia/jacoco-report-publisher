@@ -25,7 +25,7 @@ export async function run(): Promise<void> {
         core.info(`options: ${JSON.stringify(options, null, '\t')}`);
 
         const client: InstanceType<typeof GitHub> = github.getOctokit(
-            core.getInput('github_token')
+            core.getInput('github-token')
         );
 
         const changedFiles = await getChangedFiles(
