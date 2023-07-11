@@ -1,0 +1,3276 @@
+{
+	"project": {
+		"projects": [
+			{
+				"files": [
+					{
+						"file": {
+							"path": "com/example/partnerbridge/PartnerBridgeApp.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 5,
+							"covered": 16,
+							"percentage": 76.19
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/integration/validation/ValidationRequest.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 9,
+							"covered": 0,
+							"percentage": 0
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/xxx/model/health/ApiHealthCheckType.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 15,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/aaa/config/tracing/CallerIdFilter.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 13,
+							"covered": 43,
+							"percentage": 76.79
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 3,
+							"covered": 1,
+							"percentage": 25
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/aaa/config/tracing/MdcTraceIdScopeManager.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 97,
+							"covered": 0,
+							"percentage": 0
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 4,
+							"covered": 0,
+							"percentage": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/aaa/config/tracing/CallerIdAccessConverter.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 18,
+							"covered": 0,
+							"percentage": 0
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/aaa/config/tracing/NoopTracingConfig.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 5,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/aaa/config/tracing/TracingConfig.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 10,
+							"covered": 9,
+							"percentage": 47.37
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/aaa/config/tracing/TraceIdAccessConverter.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 27,
+							"covered": 0,
+							"percentage": 0
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 2,
+							"covered": 0,
+							"percentage": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/zzz/ports/partnercatalog/BranchCode.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 3,
+							"covered": 18,
+							"percentage": 85.71
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/zzz/ports/partnercatalog/NetworkDataCatalog.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 10,
+							"covered": 15,
+							"percentage": 60
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 1,
+							"covered": 1,
+							"percentage": 50
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/zzz/ports/partnercatalog/Destination.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 3,
+							"covered": 24,
+							"percentage": 88.89
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/xxx/yyy/HttpApiHealthCheckConnector.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 159,
+							"covered": 18,
+							"percentage": 10.17
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 10,
+							"covered": 0,
+							"percentage": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/rrr/types/mapping/ResponseMappingList.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 3,
+							"covered": 45,
+							"percentage": 93.75
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 1,
+							"covered": 5,
+							"percentage": 83.33
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/rrr/types/mapping/ResponseMapping.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 39,
+							"covered": 102,
+							"percentage": 72.34
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/api/error/types/ErrorResponse.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 9,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/api/error/handlers/ApiExceptionHandler.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 6,
+							"covered": 62,
+							"percentage": 91.18
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 1,
+							"covered": 3,
+							"percentage": 75
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/hhh/phonenumber/PhoneNumberNormalizer.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 19,
+							"covered": 36,
+							"percentage": 65.45
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 1,
+							"covered": 3,
+							"percentage": 75
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/xxx/model/health/sftp/SftpApiHealthCheckConfig.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 2,
+							"covered": 0,
+							"percentage": 0
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/rrr/dataprovider/ResponseMappingDataProvider.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 13,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/integration/exceptions/resolver/PayoutIntegrationExceptionResolver.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 218,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 10,
+							"percentage": 100
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/aaa/config/jackson/JacksonConfiguration.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 71,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/xxx/model/health/http/HttpApiHealthCheckConfig.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 2,
+							"covered": 0,
+							"percentage": 0
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/xxx/model/health/http/HttpApiHealthCheckResult.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 2,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/zzz/adapters/recipientpayoutservice/RecipientPayoutServiceException.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 7,
+							"covered": 0,
+							"percentage": 0
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/zzz/adapters/recipientpayoutservice/RecipientPayoutServiceAccountProvider.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 18,
+							"covered": 27,
+							"percentage": 60
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 2,
+							"covered": 2,
+							"percentage": 50
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/event/config/UelLoggerConfig.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 4,
+							"covered": 14,
+							"percentage": 77.78
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/integration/IntegrationConfig.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 2,
+							"covered": 3,
+							"percentage": 60
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/integration/PayoutIntegration.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 150,
+							"covered": 0,
+							"percentage": 0
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/api/v1/payout/controller/PayoutApiControllerV1.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 9,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/api/v1/payout/controller/PayoutTransactionControllerV1.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 39,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/aaa/okhttp/TracingInterceptor.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 84,
+							"covered": 3,
+							"percentage": 3.45
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 6,
+							"covered": 0,
+							"percentage": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/aaa/okhttp/RetryInterceptor.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 90,
+							"covered": 35,
+							"percentage": 28
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 15,
+							"covered": 1,
+							"percentage": 6.25
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/connectors/sampath/api/SampathResponseListScrubber.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 48,
+							"covered": 0,
+							"percentage": 0
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/connectors/lbc/adapters/LbcPayoutTransactionAdapter.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 267,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 2,
+							"percentage": 100
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/connectors/lbc/adapters/LbcPayoutTransactionStatusAdapter.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 72,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/api/v1/payout/adapters/PayoutTransactionStatusMapperImpl.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 6,
+							"covered": 118,
+							"percentage": 95.16
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 6,
+							"covered": 6,
+							"percentage": 50
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/api/v1/payout/adapters/PayoutTransactionStatusMapper.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 5,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/api/v1/payout/adapters/PayoutTransactionAdapter.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 70,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 1,
+							"covered": 3,
+							"percentage": 75
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/api/v1/payout/adapters/OptionalMapper.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 4,
+							"covered": 0,
+							"percentage": 0
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/api/v1/payout/adapters/ApiHealthCheckMapper.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 5,
+							"covered": 16,
+							"percentage": 76.19
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 1,
+							"covered": 1,
+							"percentage": 50
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/api/v1/payout/adapters/ApiHealthCheckAdapter.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 7,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/api/v1/payout/adapters/PayoutTransactionMapper.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 2,
+							"covered": 49,
+							"percentage": 96.08
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 1,
+							"covered": 1,
+							"percentage": 50
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/api/v1/payout/adapters/PayoutTransactionMapperImpl.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 24,
+							"covered": 451,
+							"percentage": 94.95
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 14,
+							"covered": 14,
+							"percentage": 50
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/api/v1/payout/adapters/ApiHealthCheckMapperImpl.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 4,
+							"covered": 56,
+							"percentage": 93.33
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 3,
+							"covered": 3,
+							"percentage": 50
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/connectors/bpi/api/BpiApiConstants.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 3,
+							"covered": 0,
+							"percentage": 0
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/connectors/bankalhabib/config/BankAlHabibConfig.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 23,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/connectors/exchange4free/api/BeneficiaryAccount.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 47,
+							"covered": 0,
+							"percentage": 0
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 10,
+							"covered": 0,
+							"percentage": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/connectors/exchange4free/api/BeneficiaryApi.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 27,
+							"covered": 0,
+							"percentage": 0
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/connectors/exchange4free/api/QuoteApi.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 19,
+							"covered": 0,
+							"percentage": 0
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/connectors/exchange4free/api/Beneficiary.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 30,
+							"covered": 0,
+							"percentage": 0
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 10,
+							"covered": 0,
+							"percentage": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/connectors/exchange4free/api/Exchange4FreeUtil.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 6,
+							"covered": 0,
+							"percentage": 0
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/connectors/exchange4free/api/TransactionApi.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 27,
+							"covered": 0,
+							"percentage": 0
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/connectors/exchange4free/api/UserApi.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 11,
+							"covered": 0,
+							"percentage": 0
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/api/v1/payout/request/PayoutAccountV1.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 3,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/api/v1/payout/request/AddressV1.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 18,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/api/v1/payout/request/NameV1.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 12,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/api/v1/payout/request/PersonV1.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 24,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/api/v1/payout/request/PayoutTransactionRequestV1.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 33,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/api/v1/payout/request/KycDataV1.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 21,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/api/v1/payout/request/SourceV1.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 15,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/api/v1/payout/request/TargetV1.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 15,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/api/v1/payout/request/AmountV1.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 9,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/api/v1/payout/request/IdentificationV1.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 6,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/api/v1/payout/request/RouteV1.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 9,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/api/v1/payout/request/DestinationV1.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 6,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/connectors/bdo/config/BdoAction.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 52,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/connectors/bdo/config/AlternateBdoBankCode.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 6,
+							"covered": 167,
+							"percentage": 96.53
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 3,
+							"covered": 1,
+							"percentage": 25
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/connectors/bdo/config/BdoCredentials.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 39,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/connectors/bdo/config/BdoTransactionType.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 21,
+							"covered": 64,
+							"percentage": 75.29
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 3,
+							"covered": 1,
+							"percentage": 25
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/connectors/bdo/config/BdoConfig.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 14,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/connectors/bdo/config/BdoSignedDataRequest.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 27,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/connectors/bdo/connectors/BdoApiHealthCheckConnector.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 8,
+							"covered": 4,
+							"percentage": 33.33
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/connectors/bdo/connectors/BdoPayoutConnector.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 6,
+							"covered": 4,
+							"percentage": 40
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/connectors/bdo/connectors/BdoConnector.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 2,
+							"covered": 0,
+							"percentage": 0
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/connectors/bdo/connectors/BdoValidationConnector.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 2,
+							"covered": 4,
+							"percentage": 66.67
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/xxx/model/PartnerValue.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 12,
+							"covered": 43,
+							"percentage": 78.18
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/connectors/lbc/config/LbcConfiguration.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 41,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/connectors/lbc/config/LbcCredentials.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 15,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/integration/email/EmailSender.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 15,
+							"covered": 60,
+							"percentage": 80
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 3,
+							"covered": 1,
+							"percentage": 25
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/connectors/bdo/adapters/BdoPayoutTransactionAdapter.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 63,
+							"covered": 331,
+							"percentage": 84.01
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 12,
+							"covered": 6,
+							"percentage": 33.33
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/connectors/bdo/adapters/BdoPayoutTransactionStatusAdapter.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 9,
+							"covered": 60,
+							"percentage": 86.96
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/connectors/commons/soap/WsdlUrl.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 22,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/integration/eee/IntegrationVora.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 232,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/zzz/adapters/partnerconfig/MockIntegrationSettingsProvider.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 37,
+							"covered": 0,
+							"percentage": 0
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/connectors/lbc/connectors/LbcApiHealthCheckConnector.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 10,
+							"covered": 7,
+							"percentage": 41.18
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/connectors/lbc/connectors/LbcConnector.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 2,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/connectors/lbc/connectors/LbcEmailCancellationConnector.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 41,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/connectors/lbc/connectors/LbcPayoutConnector.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 96,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/connectors/lbc/connectors/LbcPayoutStatusConnector.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 38,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/integration/cancel/EmailCancellationConnector.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 68,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/integration/exceptions/types/UnsupportedPartnerActionException.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 25,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/integration/commons/FundsLocation.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 420,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/integration/commons/ValidationStatus.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 21,
+							"covered": 0,
+							"percentage": 0
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/integration/commons/PartnerActionDomain.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 15,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/integration/commons/PayoutAction.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 31,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/integration/commons/PartnerApiRequestType.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 213,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/integration/commons/PayoutStatus.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 387,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/integration/commons/Language.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 15,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/integration/commons/PartnerConnectionStatus.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 21,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/zzz/ports/integrationconfig/IntegrationSettings.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 15,
+							"covered": 0,
+							"percentage": 0
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/zzz/ports/integrationconfig/PartnerConfig.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 15,
+							"covered": 0,
+							"percentage": 0
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/zzz/ports/integrationconfig/PartnerData.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 3,
+							"covered": 0,
+							"percentage": 0
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/zzz/ports/integrationconfig/ConnectionSettings.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 6,
+							"covered": 0,
+							"percentage": 0
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/zzz/ports/integrationconfig/ConnectionSetting.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 21,
+							"covered": 0,
+							"percentage": 0
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/hhh/validation/PartnerRequestError.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 3,
+							"covered": 12,
+							"percentage": 80
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/hhh/validation/PartnerRequestValidationException.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 64,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 2,
+							"percentage": 100
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/hhh/validation/PartnerRequestValidator.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 19,
+							"covered": 185,
+							"percentage": 90.69
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 3,
+							"covered": 17,
+							"percentage": 85
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/aaa/aspect/ExceptionMonitoringAspect.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 20,
+							"covered": 3,
+							"percentage": 13.04
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/aaa/config/bugsnag/BugsnagConfig.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 19,
+							"covered": 0,
+							"percentage": 0
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/aaa/config/bugsnag/BugsnagAsyncConfig.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 9,
+							"covered": 0,
+							"percentage": 0
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/rrr/types/ResponseInternalRemarks.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 4,
+							"covered": 14,
+							"percentage": 77.78
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/rrr/types/ResponseMappingSignal.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 2,
+							"covered": 31,
+							"percentage": 93.94
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 1,
+							"covered": 1,
+							"percentage": 50
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/xxx/model/payout/TransactionStatus.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 21,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/xxx/model/payout/Address.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 3,
+							"covered": 62,
+							"percentage": 95.38
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 2,
+							"percentage": 100
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/xxx/model/payout/Identification.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 6,
+							"covered": 0,
+							"percentage": 0
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/xxx/model/payout/PhoneNumber.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 3,
+							"covered": 18,
+							"percentage": 85.71
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/xxx/model/payout/Amount.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 6,
+							"covered": 9,
+							"percentage": 60
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/xxx/model/payout/Name.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 3,
+							"covered": 15,
+							"percentage": 83.33
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/xxx/model/payout/Target.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 15,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/xxx/model/payout/Destination.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 3,
+							"covered": 3,
+							"percentage": 50
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/xxx/model/payout/TransactionType.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 27,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/xxx/model/payout/PayoutAccount.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 9,
+							"covered": 3,
+							"percentage": 25
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/xxx/model/payout/KycData.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 9,
+							"covered": 12,
+							"percentage": 57.14
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/xxx/model/payout/Source.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 12,
+							"covered": 3,
+							"percentage": 20
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/xxx/model/payout/Route.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 9,
+							"covered": 3,
+							"percentage": 25
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/xxx/model/payout/PayoutTransactionStatus.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 18,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/xxx/model/payout/Person.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 15,
+							"covered": 9,
+							"percentage": 37.5
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/xxx/model/payout/ReferenceCodes.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 6,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/xxx/model/payout/PayoutTransaction.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 12,
+							"covered": 21,
+							"percentage": 63.64
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/zzz/clients/recipientpayoutservice/types/PayoutId.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 3,
+							"covered": 0,
+							"percentage": 0
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/api/v1/payout/response/ApiHealthCheckResultV1.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 4,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/api/v1/payout/response/PayoutTransactionStatusV1.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 21,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/api/v1/payout/response/SftpApiHealthCheckResultV1.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 2,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/api/v1/payout/response/PayoutTransactionStatusResponseV1.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 18,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/api/v1/payout/response/ReferenceCodesV1.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 6,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/api/v1/payout/response/HttpApiHealthCheckResultV1.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 2,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/hhh/jaxb/JaxbDeserializer.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 16,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/integration/logging/logger/SoapApiLogger.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 5,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/integration/logging/logger/ApiLogger.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 266,
+							"covered": 61,
+							"percentage": 18.65
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/integration/logging/logger/RestApiLogger.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 5,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/aaa/config/tomcat/TomcatConfig.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 23,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/integration/adapters/PayoutTransactionAdapter.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 6,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/hhh/validation/error/ValidationErrorType.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 17,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/aaa/config/newrelic/NewRelicVoraConfig.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 65,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/connectors/lbc/responsemapping/LbcResponseMappingManager.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 2,
+							"covered": 120,
+							"percentage": 98.36
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 1,
+							"covered": 9,
+							"percentage": 90
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/connectors/lbc/responsemapping/LbcResponseMappingSignal.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 65,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 4,
+							"percentage": 100
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/connectors/lbc/responsemapping/LbcResponseMappingDataProvider.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 413,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/zzz/adapters/partnercatalog/config/PartnerCatalogConfig.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 67,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/zzz/adapters/partnercatalog/PartnerCatalogDataProvider.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 38,
+							"covered": 85,
+							"percentage": 69.11
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 2,
+							"covered": 2,
+							"percentage": 50
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/rrr/exception/MissingResponseMappingException.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 12,
+							"covered": 0,
+							"percentage": 0
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/integration/logging/sanitizer/JaxbSanitizer.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 34,
+							"covered": 77,
+							"percentage": 69.37
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 5,
+							"covered": 5,
+							"percentage": 50
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/integration/logging/sanitizer/LogSanitizer.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 43,
+							"covered": 163,
+							"percentage": 79.13
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 2,
+							"covered": 12,
+							"percentage": 85.71
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/integration/logging/sanitizer/JacksonSanitizer.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 4,
+							"covered": 37,
+							"percentage": 90.24
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 2,
+							"covered": 4,
+							"percentage": 66.67
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/integration/email/config/EmailConfig.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 11,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/zzz/adapters/recipientpayoutservice/config/ReceiverBankAccountConfig.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 46,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/hhh/validation/annotation/ValidateFieldTypeValidated.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 4,
+							"covered": 3,
+							"percentage": 42.86
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/hhh/validation/annotation/ValidateRequired.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 9,
+							"covered": 61,
+							"percentage": 87.14
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 7,
+							"covered": 5,
+							"percentage": 41.67
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/hhh/validation/annotation/AnnotationProcessor.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 3,
+							"covered": 11,
+							"percentage": 78.57
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/hhh/validation/data/FieldType.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 39,
+							"covered": 0,
+							"percentage": 0
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/rrr/manager/ResponseMappingManager.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 18,
+							"covered": 7,
+							"percentage": 28
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/aaa/eee/VoraLabel.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 3,
+							"covered": 0,
+							"percentage": 0
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/aaa/eee/ApplicationVora.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 30,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/connectors/bdo/BdoIllegalSystemParameterException.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 5,
+							"covered": 0,
+							"percentage": 0
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/integration/logging/manager/PartnerLogManager.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 7,
+							"covered": 62,
+							"percentage": 89.86
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/integration/logging/manager/PartnerLog.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 2,
+							"covered": 14,
+							"percentage": 87.5
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 2,
+							"covered": 2,
+							"percentage": 50
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/hhh/scrubber/Sensitive.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 365,
+							"covered": 0,
+							"percentage": 0
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 12,
+							"covered": 0,
+							"percentage": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/hhh/scrubber/ListScrubber.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 75,
+							"covered": 0,
+							"percentage": 0
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 6,
+							"covered": 0,
+							"percentage": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/hhh/scrubber/RuntimeJAXBException.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 4,
+							"covered": 0,
+							"percentage": 0
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/hhh/scrubber/TextScrubber.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 2,
+							"covered": 91,
+							"percentage": 97.85
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 1,
+							"covered": 7,
+							"percentage": 87.5
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/xxx/model/email/EmailContents.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 48,
+							"covered": 273,
+							"percentage": 85.05
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 13,
+							"covered": 19,
+							"percentage": 59.38
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/xxx/model/email/EmailBodyField.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 39,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/xxx/model/email/Email.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 15,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/integration/partner/SoapPartnerConnector.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 0,
+							"covered": 3,
+							"percentage": 100
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/integration/partner/RestPartnerConnector.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 3,
+							"covered": 0,
+							"percentage": 0
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/integration/partner/ApiPartnerConnector.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 18,
+							"covered": 109,
+							"percentage": 85.83
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					},
+					{
+						"file": {
+							"path": "com/example/hhh/errors/BugsnagMarkerFactory.java",
+							"url": ""
+						},
+						"modified": false,
+						"instructions": {
+							"type": "INSTRUCTION",
+							"missed": 75,
+							"covered": 6,
+							"percentage": 7.41
+						},
+						"branch": {
+							"type": "BRANCH",
+							"missed": 0,
+							"covered": 0
+						}
+					}
+				],
+				"instructions": {
+					"type": "INSTRUCTION",
+					"missed": 2563,
+					"covered": 7327,
+					"percentage": 74.08
+				},
+				"branch": {
+					"type": "BRANCH",
+					"missed": 170,
+					"covered": 156,
+					"percentage": 47.85
+				}
+			}
+		],
+		"instructions": {
+			"type": "INSTRUCTION",
+			"missed": 2563,
+			"covered": 7327,
+			"percentage": 74.08
+		},
+		"branch": {
+			"type": "BRANCH",
+			"missed": 170,
+			"covered": 156,
+			"percentage": 47.85
+		}
+	},
+	"modifiedFiles": {
+		"files": [],
+		"instructions": {
+			"type": "INSTRUCTION",
+			"missed": 0,
+			"covered": 0,
+			"percentage": 100
+		},
+		"branch": {
+			"type": "BRANCH",
+			"missed": 0,
+			"covered": 0,
+			"percentage": 100
+		}
+	}
+}

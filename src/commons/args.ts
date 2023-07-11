@@ -37,8 +37,7 @@ export function extractGithubSettings(githubContext: Context): GithubSettings {
 }
 
 export function extractActionOptions(): ActionOptions {
-    const paths: string = core.getInput('paths');
-    const reportPaths: string[] = paths.split(',');
+    const reportPaths: string[] = (core.getInput('paths') || '').split(',');
 
     const minOverallInstructionsCoverage: number = parseNumber(
         core.getInput('min-overall-instructions-coverage')
@@ -57,6 +56,7 @@ export function extractActionOptions(): ActionOptions {
     );
 
     const pullRequestTitle: string = core.getInput('title');
+
     const updatePreviousComment = core.getBooleanInput(
         'update-previous-comment'
     );
@@ -67,10 +67,7 @@ export function extractActionOptions(): ActionOptions {
     const githubToken = core.getInput('github_token');
 
     return {
-        pullRequestTitle:
-            updatePreviousComment || deletePreviousComment
-                ? pullRequestTitle || 'JaCoCo Report'
-                : pullRequestTitle,
+        pullRequestTitle,
 
         deletePreviousComment,
         updatePreviousComment,

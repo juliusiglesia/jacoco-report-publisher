@@ -1,8 +1,6 @@
 import {
     Coverage,
     FileCoverage,
-    OverallModuleCoverage,
-    OverallFileCoverage,
     File,
     CoverageSummary,
     ProjectCoverage,
@@ -13,15 +11,6 @@ import {
 
 import * as parser from 'xml2js';
 import * as fs from 'fs';
-
-export async function getJacocoReportsAsJson(paths: string[]): Promise<any> {
-    return Promise.all(
-        paths.map(async path => {
-            const reportXml = await fs.promises.readFile(path.trim(), 'utf-8');
-            return await parser.parseStringPromise(reportXml);
-        })
-    );
-}
 
 export async function getCoverageSummary(
     paths: string[],
@@ -120,24 +109,16 @@ function getModifiedFilesCoverageSummary(
             type: 'INSTRUCTION',
             missed: instructionsMissed,
             covered: instructionsCovered,
-            percentage: parseFloat(
-                (
-                    (instructionsCovered /
-                        (instructionsCovered + instructionsMissed)) *
-                    100
-                ).toFixed(2)
+            percentage: getCoveragePercentage(
+                instructionsMissed,
+                instructionsCovered
             )
         },
         branch: {
             type: 'BRANCH',
             missed: branchesMissed,
             covered: branchesCovered,
-            percentage: parseFloat(
-                (
-                    (branchesCovered / (branchesCovered + branchesMissed)) *
-                    100
-                ).toFixed(2)
-            )
+            percentage: getCoveragePercentage(branchesMissed, branchesCovered)
         }
     };
 }
@@ -188,143 +169,6 @@ function findFileEndingWith(
     });
 }
 
-// function getFileCoverageFromPackages(
-//     packages: any[],
-//     files: File[]
-// ): OverallFileCoverage {
-//     const fileCoverages: FileCoverage[] = [];
-
-//     return getOverallFileCoverage(fileCoverages);
-// }
-
-//
-//
-//
-
-export function getFileCoverage(
-    reports: { [key: string]: any },
-    files: File[]
-): OverallFileCoverage {
-    const packages = reports.map((report: any) => report['package']);
-    return getFileCoverageFromPackages([].concat(...packages), files);
-}
-
-export function getOverallCoverage(reports: {
-    [key: string]: any;
-}): OverallModuleCoverage {
-    const modules = reports.map((report: any) => {
-        return {
-            module: report['$']['name'],
-            instructions: getModuleCoverage(report, 'INSTRUCTION') || 0,
-            branch: getModuleCoverage(report, 'BRANCH')
-        };
-    });
-
-    return {
-        modules,
-        overallInstructions: getProjectCoverageForType(reports, 'INSTRUCTION'),
-        overallBranch: getProjectCoverageForType(reports, 'BRANCH')
-    };
-}
-
-function getFileCoverageFromPackages(
-    packages: any[],
-    files: File[]
-): OverallFileCoverage {
-    const fileCoverages: FileCoverage[] = [];
-
-    for (const item of packages) {
-        const packageName = item['$'].name;
-        const sourceFiles = item.sourcefile;
-
-        for (const sourceFile of sourceFiles) {
-            const sourceFileName = sourceFile['$'].name;
-            const file = files.find((f: File) => {
-                return f.path.endsWith(`${packageName}/${sourceFileName}`);
-            });
-
-            if (file != null) {
-                const counters = sourceFile['counter'];
-                if (counters != null && counters.length !== 0) {
-                    fileCoverages.push({
-                        file,
-                        modified: true,
-                        instructions: getDetailedCoverage(
-                            counters,
-                            'INSTRUCTION'
-                        ),
-                        branch: getDetailedCoverage(counters, 'BRANCH')
-                    });
-                }
-            }
-        }
-    }
-
-    return getOverallFileCoverage(fileCoverages);
-}
-
-function getOverallFileCoverage(
-    fileCoverages: FileCoverage[]
-): OverallFileCoverage {
-    let missedBranch = 0;
-    let coveredBranch = 0;
-
-    let missedInsructions = 0;
-    let coveredInsructions = 0;
-
-    for (const cov of fileCoverages) {
-        missedBranch += cov.branch.missed;
-        coveredBranch += cov.branch.covered;
-
-        missedInsructions += cov.instructions.missed;
-        coveredInsructions += cov.instructions.covered;
-    }
-
-    return {
-        files: fileCoverages,
-        overallInstructions: parseFloat(
-            (
-                (coveredInsructions /
-                    (coveredInsructions + missedInsructions)) *
-                100
-            ).toFixed(2)
-        ),
-        overallBranch: parseFloat(
-            ((coveredBranch / (coveredBranch + missedBranch)) * 100).toFixed(2)
-        )
-    };
-}
-
-function getModuleCoverage(
-    report: { [key: string]: any },
-    type: CoverageType
-): number | undefined {
-    const counters = report['counter'];
-    const coverage = getDetailedCoverage(counters, type);
-    return coverage.percentage;
-}
-
-function getProjectCoverageForType(
-    reports: { [key: string]: any },
-    type: CoverageType
-): number {
-    const coverages: Coverage[] = reports.map((report: any) =>
-        getDetailedCoverage(report['counter'], type)
-    );
-
-    const covered = coverages.reduce(
-        (acc: number, coverage: Coverage) => acc + coverage.covered,
-        0
-    );
-
-    const missed = coverages.reduce(
-        (acc: number, coverage: Coverage) => acc + coverage.missed,
-        0
-    );
-
-    return parseFloat(((covered / (covered + missed)) * 100).toFixed(2));
-}
-
 function getDetailedCoverage(
     counters: readonly { [key: string]: any }[],
     type: CoverageType
@@ -349,4 +193,12 @@ function getDetailedCoverage(
     }
 
     return coverage;
+}
+
+function getCoveragePercentage(missed: number, covered: number): number {
+    if (missed + covered === 0) {
+        return 100;
+    }
+
+    return (covered / (covered + missed)) * 100;
 }

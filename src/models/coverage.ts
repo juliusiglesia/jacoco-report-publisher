@@ -14,24 +14,6 @@ export interface FileCoverage {
     branch: Coverage;
 }
 
-export interface OverallFileCoverage {
-    files: FileCoverage[];
-    overallInstructions: number;
-    overallBranch: number;
-}
-
-export interface ModuleCoverage {
-    name: string;
-    instructions: number;
-    branch: number;
-}
-
-export interface OverallModuleCoverage {
-    modules: ModuleCoverage[];
-    overallInstructions: number;
-    overallBranch: number;
-}
-
 export interface File {
     path: string;
     url: string;
