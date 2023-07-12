@@ -2,21 +2,79 @@
   <a href="https://github.com/actions/typescript-action/actions"><img alt="typescript-action status" src="https://github.com/actions/typescript-action/workflows/build-test/badge.svg"></a>
 </p>
 
-# Create a JavaScript Action using TypeScript
+# jacoco-reporter
 
-Use this template to bootstrap the creation of a TypeScript action.:rocket:
+Add JaCoCo test results in the push and pull request events. Inspired by [Madrapps/jacoco-report](https://github.com/Madrapps/jacoco-report) and expanded some functionalities.
 
-This template includes compilation support, tests, a validation workflow, publishing, and versioning guidance.  
+## Usage
+### Inputs
 
-If you are new, there's also a simpler introduction.  See the [Hello World JavaScript Action](https://github.com/actions/hello-world-javascript-action)
+- `report-paths` - [**required**] comma-separated list of JaCoCo report paths
+- `min-overall-instructions-coverage` - [**optional**, default: 0] minimum required for INSTRUCTION coverage for the project, both average and per file
+- `min-overall-branch-coverage` - [**optional**, default: 0] minimum required for BRANCH coverage for the project, both average and per file
+- `min-modified-files-instructions-coverage` - [**optional**, default: 0] minimum required for INSTRUCTION coverage for the modified files, both average and per file
+- `min-modified-files-branch-coverage` - [**optional**, default: 0] minimum required for BRANCH coverage for the modified files, both average and per file
+- `pull-request-title` - [**optional**, default: ''] title of the pull request comment to be made
+- `update-previous-comment` - [**optional**, default: false] whether to update the previous comment or not; this takes higher precendence than delete-previous-comment option
+- `delete-previous-comment` - [**optional**, default: false] whether to delete the previous comment or not
+- `github-token` - [**required**] token to use to be used for GitHub API
 
-## Create an action from this template
+### Outputs
 
-Click the `Use this Template` and provide the new repo details for your action
+- `overall-instructions-coverage` - the overall coverage of the project for _INSTRUCTIONS_ counter
+- `overall-branch-coverage` - the overall coverage of the project for _BRANCH_ counter
+- `modified-files-instructions-coverage` - the overall coverage of the modified files for _INSTRUCTIONS_ counter
+- `modified-files-branch-coverage` - the overall coverage of the modified files for _BRANCH_ counter
 
-## Code in Main
 
-> First, you'll need to have a reasonably modern version of `node` handy. This won't work with versions older than 9, for instance.
+### Example Workflow
+
+```yaml
+name: Jacoco Code Coverage
+
+on:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out Code
+        uses: actions/checkout@v3
+
+      - name: Set up JDK 17.0
+        uses: actions/setup-java@v3
+        with:
+          distribution: "corretto"
+          java-version: 17.0
+          cache: "gradle"
+
+      - name: Run Coverage
+        run: |
+          chmod +x gradlew
+          ./gradlew jacocoTestReport
+
+      - name: Add coverage to PR
+        id: jacoco
+        uses: juliusiglesia/jacoco-reporter@v1.0
+        with:
+          report-paths: ${{ github.workspace }}/build/reports/jacoco/test/jacocoTestReport.xml
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          min-overall-instructions-coverage: 50
+          min-overall-branch-coverage: 50
+          min-modified-files-instructions-coverage: 70
+          min-modified-files-branch-coverage: 70
+```
+
+## Development
+
+> &nbsp;
+> 
+> **Prerequisistes:**
+> 1. node v16+
+> 
+> &nbsp;
+
 
 Install the dependencies  
 ```bash
@@ -40,35 +98,10 @@ $ npm test
 ...
 ```
 
-## Change action.yml
-
-The action.yml defines the inputs and output for your action.
-
-Update the action.yml with your name, description, inputs and outputs for your action.
-
-See the [documentation](https://help.github.com/en/articles/metadata-syntax-for-github-actions)
-
-## Change the Code
-
-Most toolkit and CI/CD operations involve async operations so the action is run in an async function.
-
-```javascript
-import * as core from '@actions/core';
-...
-
-async function run() {
-  try { 
-      ...
-  } 
-  catch (error) {
-    core.setFailed(error.message);
-  }
-}
-
-run()
+Auto-fix linting issues :heavy_check_mark:  
+```bash
+$ npm run format
 ```
-
-See the [toolkit documentation](https://github.com/actions/toolkit/blob/master/README.md#packages) for the various packages.
 
 ## Publish to a distribution branch
 
@@ -95,7 +128,13 @@ You can now validate the action by referencing `./` in a workflow in your repo (
 ```yaml
 uses: ./
 with:
-  milliseconds: 1000
+  report-paths: report
+  github-token: token
+  min-overall-instructions-coverage: 50
+  min-overall-branch-coverage: 50
+  min-modified-files-instructions-coverage: 70
+  min-modified-files-branch-coverage: 70
+
 ```
 
 See the [actions tab](https://github.com/actions/typescript-action/actions) for runs of this action! :rocket:

@@ -1,19 +1,84 @@
-import * as core from '@actions/core'
-import {wait} from './wait'
+import * as core from '@actions/core';
+import * as github from '@actions/github';
+import { extractActionOptions, extractGithubSettings } from './commons/args';
+import {
+    addPullRequestComment,
+    getChangedFiles
+} from './commons/github-helper';
+import { getCoverageSummary } from './commons/report-extractor';
+import { GitHub } from '@actions/github/lib/utils';
+import { getPullRequestCommentBody } from './commons/renderer';
 
-async function run(): Promise<void> {
-  try {
-    const ms: string = core.getInput('milliseconds')
-    core.debug(`Waiting ${ms} milliseconds ...`) // debug is only output if you set the secret `ACTIONS_STEP_DEBUG` to true
+export async function run(): Promise<void> {
+    try {
+        const githubSettings = extractGithubSettings(github.context);
 
-    core.debug(new Date().toTimeString())
-    await wait(parseInt(ms, 10))
-    core.debug(new Date().toTimeString())
+        core.info(
+            `github settings: ${JSON.stringify(
+                { ...githubSettings, token: '[filtered]' },
+                null,
+                '\t'
+            )}`
+        );
 
-    core.setOutput('time', new Date().toTimeString())
-  } catch (error) {
-    if (error instanceof Error) core.setFailed(error.message)
-  }
+        const options = extractActionOptions();
+        core.info(`options: ${JSON.stringify(options, null, '\t')}`);
+
+        const client: InstanceType<typeof GitHub> = github.getOctokit(
+            core.getInput('github-token')
+        );
+
+        const changedFiles = await getChangedFiles(
+            githubSettings.base,
+            githubSettings.head,
+            client
+        );
+
+        const coverage = await getCoverageSummary(
+            options.reportPaths,
+            changedFiles
+        );
+
+        core.setOutput(
+            'overall-instructions-coverage',
+            coverage.project.instructions.percentage
+        );
+
+        core.setOutput(
+            'overall-branch-coverage',
+            coverage.project.branch.percentage
+        );
+
+        core.setOutput(
+            'modified-files-instructions-coverage',
+            coverage.modifiedFiles.instructions.percentage
+        );
+
+        core.setOutput(
+            'modified-files-branch-coverage',
+            coverage.modifiedFiles.branch.percentage
+        );
+
+        if (githubSettings.isPullRequest) {
+            const pullRequestComment = getPullRequestCommentBody(
+                coverage,
+                options
+            );
+
+            await addPullRequestComment(
+                options,
+                client,
+                githubSettings.pullRequestNumber,
+                pullRequestComment
+            );
+        }
+
+        core.info('\n\ndone! have a great day!\n\n');
+    } catch (error) {
+        if (error instanceof Error) {
+            core.setFailed(error.message);
+        }
+    }
 }
 
-run()
+run();

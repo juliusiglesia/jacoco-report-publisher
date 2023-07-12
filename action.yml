@@ -1,11 +1,41 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'jacoco-reporter'
+description: 'Provides JaCoCo report'
+author: 'juliusiglesia'
 inputs:
-  milliseconds: # change this
+  report-paths:
     required: true
-    description: 'input description here'
-    default: 'default value if applicable'
+    description: 'comma-separated list of JaCoCo report paths'
+  min-overall-instructions-coverage:
+    required: false
+    description: 'minimum required for INSTRUCTION coverage for the project, both average and per file'
+    default: '0'
+  min-overall-branch-coverage:
+    required: false
+    description: 'minimum required for BRANCH coverage for the project, both average and per file'
+    default: '0'
+  min-modified-files-instructions-coverage:
+    required: false
+    description: 'minimum required for INSTRUCTION coverage for the modified files, both average and per file'
+    default: '0'
+  min-modified-files-branch-coverage:
+    required: false
+    description: 'minimum required for BRANCH coverage for the modified files, both average and per file'
+    default: '0'
+  pull-request-title:
+    required: false
+    description: 'title of the pull request comment to be made'
+    default: ''
+  update-previous-comment:
+    required: false
+    description: 'whether to update the previous comment or not; this takes higher precendence than delete-previous-comment option'
+    default: 'false'
+  delete-previous-comment:
+    required: false
+    description: 'whether to delete the previous comment or not'
+    default: 'false'
+  github-token:
+    required: true
+    description: 'token to use to be used for GitHub API'
 runs:
   using: 'node16'
   main: 'dist/index.js'
