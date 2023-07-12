@@ -21,7 +21,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: ./
         with:
-          report-paths: report.xml
+          report-paths: ${{ github.workspace }}/__tests__/__fixtures__/input/report.xml
           github-token: ${{ secrets.GH_TOKEN }}
           min-overall-instructions-coverage: 50
           min-overall-branch-coverage: 50
