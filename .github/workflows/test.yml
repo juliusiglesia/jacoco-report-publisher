@@ -23,7 +23,7 @@ jobs:
         with:
           report-paths: ${{ github.workspace }}/__tests__/__fixtures__/input/report.xml
           github-token: ${{ secrets.GH_TOKEN }}
-          delete-previous-comment: true
+          update-previous-comment: true
           min-overall-instructions-coverage: 50
           min-overall-branch-coverage: 50
           min-modified-files-instructions-coverage: 70
