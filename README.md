@@ -128,7 +128,13 @@ You can now validate the action by referencing `./` in a workflow in your repo (
 ```yaml
 uses: ./
 with:
-  milliseconds: 1000
+  report-paths: report
+  github-token: token
+  min-overall-instructions-coverage: 50
+  min-overall-branch-coverage: 50
+  min-modified-files-instructions-coverage: 70
+  min-modified-files-branch-coverage: 70
+
 ```
 
 See the [actions tab](https://github.com/actions/typescript-action/actions) for runs of this action! :rocket:
