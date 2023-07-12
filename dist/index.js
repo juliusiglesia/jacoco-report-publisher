@@ -198,22 +198,24 @@ function getPullRequestCommentBody(coverage, options) {
         <br />
         &nbsp; &nbsp; ${modifiedFilesInstructionsCoverageStatus} Instructions Coverage (${modifiedFilesInstructionsCoverage}) 
         <br />
-        &nbsp; &nbsp; ${modifiedFilesBranchCoverageStatus} Instructions Coverage (${modifiedFilesBranchCoverage}) 
+        &nbsp; &nbsp; ${modifiedFilesBranchCoverageStatus} Branch Coverage (${modifiedFilesBranchCoverage}) 
     </summary>
     <br />
 
 |File|Instructions Coverage (${modifiedFilesInstructionsCoverage})|${modifiedFilesInstructionsCoverageStatus}|Branch Coverage (${modifiedFilesBranchCoverage})|${modifiedFilesBranchCoverageStatus}|
 |:-|:-:|:-:|:-:|:-:|
-${coverage.modifiedFiles.files
-        .map(cov => {
-        const file = formatFileLinkMarkdown(cov.file);
-        const fileInstructionsCoverageStatus = getCoverageStatusIcon(cov.instructions.percentage, options.minModifiedFilesInstructionsCoverage);
-        const fileInstructionsCoverage = formatCoverage(cov.instructions.percentage);
-        const fileBranchCoverageStatus = getCoverageStatusIcon(cov.branch.percentage, options.minModifiedFilesBranchCoverage);
-        const fileBranchCoverage = formatCoverage(cov.branch.percentage);
-        return `|${file}|${fileInstructionsCoverage}|${fileInstructionsCoverageStatus}|${fileBranchCoverage}|${fileBranchCoverageStatus}|`;
-    })
-        .join('\n')}
+${coverage.modifiedFiles.files.length === 0
+        ? `|-|-|-|-|-|`
+        : coverage.modifiedFiles.files
+            .map(cov => {
+            const file = formatFileLinkMarkdown(cov.file);
+            const fileInstructionsCoverageStatus = getCoverageStatusIcon(cov.instructions.percentage, options.minModifiedFilesInstructionsCoverage);
+            const fileInstructionsCoverage = formatCoverage(cov.instructions.percentage);
+            const fileBranchCoverageStatus = getCoverageStatusIcon(cov.branch.percentage, options.minModifiedFilesBranchCoverage);
+            const fileBranchCoverage = formatCoverage(cov.branch.percentage);
+            return `|${file}|${fileInstructionsCoverage}|${fileInstructionsCoverageStatus}|${fileBranchCoverage}|${fileBranchCoverageStatus}|`;
+        })
+            .join('\n')}
 </details>
 
 <br />
@@ -225,6 +227,8 @@ ${coverage.modifiedFiles.files
         &nbsp; &nbsp; ${overallBranchCoverageStatus} Branch Coverage (${overallBranchCoverage}) 
     </summary>
 </details>
+
+${args_1.PullRequestMarker}
 `;
     if (options.pullRequestTitle) {
         return `${getPullRequestTitle(options)}\n${body}\n\n${args_1.PullRequestMarker}`;
@@ -422,7 +426,8 @@ function getDetailedCoverage(counters, type) {
     const coverage = {
         type,
         missed: 0,
-        covered: 0
+        covered: 0,
+        percentage: null
     };
     for (const counter of counters) {
         const attr = counter['$'];
@@ -438,7 +443,7 @@ function getDetailedCoverage(counters, type) {
 }
 function getCoveragePercentage(missed, covered) {
     if (missed + covered === 0) {
-        return 100;
+        return null;
     }
     return (covered / (covered + missed)) * 100;
 }

@@ -4,7 +4,7 @@ export interface Coverage {
     type: CoverageType;
     missed: number;
     covered: number;
-    percentage?: number;
+    percentage: number | null;
 }
 
 export interface FileCoverage {

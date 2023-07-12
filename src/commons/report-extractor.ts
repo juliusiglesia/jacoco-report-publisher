@@ -176,7 +176,8 @@ function getDetailedCoverage(
     const coverage: Coverage = {
         type,
         missed: 0,
-        covered: 0
+        covered: 0,
+        percentage: null
     };
 
     for (const counter of counters) {
@@ -195,9 +196,9 @@ function getDetailedCoverage(
     return coverage;
 }
 
-function getCoveragePercentage(missed: number, covered: number): number {
+function getCoveragePercentage(missed: number, covered: number): number | null {
     if (missed + covered === 0) {
-        return 100;
+        return null;
     }
 
     return (covered / (covered + missed)) * 100;
