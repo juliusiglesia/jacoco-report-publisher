@@ -18,8 +18,12 @@ jobs:
   test: # make sure the action works on a clean machine without building
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: ./
+      - name: Check out Code
+        uses: actions/checkout@v3
+
+      - name: Add Coverage to PR
+        id: jacoco
+        uses: ./
         with:
           report-paths: ${{ github.workspace }}/__tests__/__fixtures__/input/report.xml
           github-token: ${{ secrets.GH_TOKEN }}
