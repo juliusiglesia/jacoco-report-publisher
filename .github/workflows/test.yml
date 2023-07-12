@@ -29,3 +29,9 @@ jobs:
           min-overall-branch-coverage: 50
           min-modified-files-instructions-coverage: 70
           min-modified-files-branch-coverage: 70
+      - name: Get the Coverage Info
+        run: |
+          echo "Overall instructions coverage ${{ steps.jacoco.outputs.overall-instructions-coverage }}"
+          echo "Overall branch coverage ${{ steps.jacoco.outputs.overall-branch-coverage }}"
+          echo "Overall instructions coverage ${{ steps.jacoco.outputs.modified-files-instructions-coverage }}"
+          echo "Overall branch coverage ${{ steps.jacoco.outputs.modified-files-branch-coverage }}"
