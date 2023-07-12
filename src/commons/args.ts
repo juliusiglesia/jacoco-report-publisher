@@ -57,7 +57,7 @@ export function extractActionOptions(): ActionOptions {
         core.getInput('min-modified-files-branch-coverage')
     );
 
-    const pullRequestTitle: string = core.getInput('title');
+    const pullRequestTitle: string = core.getInput('pull-request-title');
 
     const updatePreviousComment = core.getBooleanInput(
         'update-previous-comment'

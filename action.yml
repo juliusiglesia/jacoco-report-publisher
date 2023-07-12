@@ -21,6 +21,10 @@ inputs:
     required: false
     description: 'minimum required for BRANCH coverage for the modified files, both average and per file'
     default: '0'
+  pull-request-title:
+    required: false
+    description: 'title of the pull request comment to be made'
+    default: ''
   update-previous-comment:
     required: false
     description: 'whether to update the previous comment or not; this takes higher precendence than delete-previous-comment option'
