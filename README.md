@@ -4,7 +4,7 @@
 
 # jacoco-reporter
 
-Add JaCoCo test results in the push and pull request events.
+Add JaCoCo test results in the push and pull request events. Inspired by [Madrapps/jacoco-report](https://github.com/Madrapps/jacoco-report) and expanded some functionalities.
 
 ## Usage
 ### Inputs
