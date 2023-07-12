@@ -507,7 +507,6 @@ function run() {
             core.setOutput('modified-files-branch-coverage', coverage.modifiedFiles.branch.percentage);
             if (githubSettings.isPullRequest) {
                 const pullRequestComment = (0, renderer_1.getPullRequestCommentBody)(coverage, options);
-                core.info(pullRequestComment);
                 yield (0, github_helper_1.addPullRequestComment)(options, client, githubSettings.pullRequestNumber, pullRequestComment);
             }
             core.info('\n\ndone! have a great day!\n\n');

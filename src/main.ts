@@ -65,8 +65,6 @@ export async function run(): Promise<void> {
                 options
             );
 
-            core.info(pullRequestComment);
-
             await addPullRequestComment(
                 options,
                 client,
