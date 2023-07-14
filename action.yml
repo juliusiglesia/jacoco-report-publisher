@@ -1,4 +1,4 @@
-name: 'jacoco-reporter'
+name: 'jacoco-report-publisher'
 description: 'Provides JaCoCo report'
 author: 'juliusiglesia'
 inputs:

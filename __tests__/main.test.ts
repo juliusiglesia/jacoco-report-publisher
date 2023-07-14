@@ -134,7 +134,7 @@ describe('test jacoco reporter flow', function () {
             data: [
                 {
                     id: 1,
-                    body: 'some comment <!-- not-jacoco-reporter-marker -->'
+                    body: 'some comment <!-- not-jacoco-report-publisher-marker -->'
                 }
             ]
         });
@@ -154,7 +154,10 @@ describe('test jacoco reporter flow', function () {
 
         mockListComments.mockReturnValue({
             data: [
-                { id: 1, body: 'some comment <!-- jacoco-reporter-marker -->' }
+                {
+                    id: 1,
+                    body: 'some comment <!-- jacoco-report-publisher-marker -->'
+                }
             ]
         });
 
@@ -188,7 +191,7 @@ describe('test jacoco reporter flow', function () {
             data: [
                 {
                     id: 1,
-                    body: 'some comment <!-- not-jacoco-reporter-marker -->'
+                    body: 'some comment <!-- not-jacoco-report-publisher-marker -->'
                 }
             ]
         });
@@ -208,7 +211,10 @@ describe('test jacoco reporter flow', function () {
 
         mockListComments.mockReturnValue({
             data: [
-                { id: 1, body: 'some comment <!-- jacoco-reporter-marker -->' }
+                {
+                    id: 1,
+                    body: 'some comment <!-- jacoco-report-publisher-marker -->'
+                }
             ]
         });
 
