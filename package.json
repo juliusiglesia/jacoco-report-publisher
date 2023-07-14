@@ -1,8 +1,8 @@
 {
-  "name": "jacoco-reporter",
+  "name": "jacoco-report-publisher",
   "version": "0.0.1",
   "private": true,
-  "description": "Jacoco Code Coverage Reporter",
+  "description": "Jacoco Code Coverage Report Publisher",
   "main": "lib/main.js",
   "scripts": {
     "build": "tsc",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/juliusiglesia/jacoco-reporter.git"
+    "url": "git+https://github.com/juliusiglesia/jacoco-report-publisher.git"
   },
   "keywords": [
     "actions",

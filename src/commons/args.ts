@@ -2,7 +2,7 @@ import * as core from '@actions/core';
 import { ActionOptions, GithubSettings } from '../models/options';
 import { Context } from '@actions/github/lib/context';
 
-export const PullRequestMarker = '<!-- jacoco-reporter-marker -->';
+export const PullRequestMarker = '<!-- jacoco-report-publisher-marker -->';
 
 export function extractGithubSettings(githubContext: Context): GithubSettings {
     const eventName = githubContext.eventName;

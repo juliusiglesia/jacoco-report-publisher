@@ -2,7 +2,7 @@
   <a href="https://github.com/actions/typescript-action/actions"><img alt="typescript-action status" src="https://github.com/actions/typescript-action/workflows/build-test/badge.svg"></a>
 </p>
 
-# jacoco-reporter
+# jacoco-report-publisher
 
 Add JaCoCo test results in the push and pull request events. Inspired by [Madrapps/jacoco-report](https://github.com/Madrapps/jacoco-report) and expanded some functionalities.
 
@@ -56,7 +56,7 @@ jobs:
 
       - name: Add coverage to PR
         id: jacoco
-        uses: juliusiglesia/jacoco-reporter@v1.0
+        uses: juliusiglesia/jacoco-report-publisher@v1.0
         with:
           report-paths: ${{ github.workspace }}/build/reports/jacoco/test/jacocoTestReport.xml
           github-token: ${{ secrets.GITHUB_TOKEN }}
