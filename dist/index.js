@@ -206,12 +206,7 @@ function getModifiedFilesCoverageSection(coverage, options) {
     const modifiedFilesBranchCoverage = formatCoverage(coverage.branch.percentage);
     if (coverage.files.length === 0) {
         return `<details open >
-        <summary> <b>Modified Files Coverage Summary</b>
-            <br />
-            &nbsp; &nbsp; ${modifiedFilesInstructionsCoverageStatus} Instructions Coverage (${modifiedFilesInstructionsCoverage}) 
-            <br />
-            &nbsp; &nbsp; ${modifiedFilesBranchCoverageStatus} Branch Coverage (${modifiedFilesBranchCoverage}) 
-        </summary>
+        <summary> <b>Modified Files Coverage Summary</b></summary>
         <br />
 
 > &nbsp;
