@@ -28,8 +28,6 @@ export function getPullRequestCommentBody(
 ${getOverallCoverageSection(coverage.project, options)}
 
 <br />
-
-${PullRequestMarker}
 `;
     if (options.pullRequestTitle) {
         return `${getPullRequestTitle(

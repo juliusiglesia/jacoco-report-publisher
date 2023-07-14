@@ -192,8 +192,6 @@ function getPullRequestCommentBody(coverage, options) {
 ${getOverallCoverageSection(coverage.project, options)}
 
 <br />
-
-${args_1.PullRequestMarker}
 `;
     if (options.pullRequestTitle) {
         return `${getPullRequestTitle(options)}\n${body}\n\n${args_1.PullRequestMarker}`;
