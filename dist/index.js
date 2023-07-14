@@ -215,9 +215,10 @@ function getModifiedFilesCoverageSection(coverage, options) {
             &nbsp; &nbsp; ${modifiedFilesBranchCoverageStatus} Branch Coverage (${modifiedFilesBranchCoverage}) 
         </summary>
         <br />
-        > &nbsp;
-        > No coverage results for the modified files
-        > &nbsp;
+
+> &nbsp;
+> No coverage results for the modified files
+> &nbsp;
         </details>`;
     }
     return `<details open >
