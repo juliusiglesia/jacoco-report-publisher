@@ -38,8 +38,8 @@ export async function addPullRequestComment(
             ...github.context.repo
         });
 
-        const comment = comments.data.find(c =>
-            c.body?.includes(PullRequestMarker)
+        const comment = comments.data.find(
+            c => c.body?.includes(PullRequestMarker)
         );
 
         if (comment) {
