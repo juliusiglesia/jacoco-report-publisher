@@ -194,7 +194,7 @@ ${getOverallCoverageSection(coverage.project, options)}
 <br />
 `;
     if (options.pullRequestTitle) {
-        return `${getPullRequestTitle(options)}\n${body}\n\n${args_1.PullRequestMarker}`;
+        return `${getPullRequestTitle(options)}\n${body}\n${args_1.PullRequestMarker}`;
     }
     return body;
 }
@@ -264,9 +264,9 @@ function getCoverageStatusIcon(coverage, minCoverage) {
         return ":yellow_circle:" /* CoverageStatusIcon.None */;
     }
     if (coverage < minCoverage) {
-        return ":x:" /* CoverageStatusIcon.Fail */;
+        return ":red_circle:" /* CoverageStatusIcon.Fail */;
     }
-    return ":white_check_mark:" /* CoverageStatusIcon.Pass */;
+    return ":green_circle:" /* CoverageStatusIcon.Pass */;
 }
 function formatCoverage(coverage) {
     if (coverage == null) {

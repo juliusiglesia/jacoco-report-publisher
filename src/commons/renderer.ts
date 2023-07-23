@@ -9,8 +9,8 @@ import { PullRequestMarker } from './args';
 
 // eslint-disable-next-line no-shadow
 const enum CoverageStatusIcon {
-    Pass = ':white_check_mark:',
-    Fail = ':x:',
+    Pass = ':green_circle:',
+    Fail = ':red_circle:',
     None = ':yellow_circle:'
 }
 
@@ -30,9 +30,7 @@ ${getOverallCoverageSection(coverage.project, options)}
 <br />
 `;
     if (options.pullRequestTitle) {
-        return `${getPullRequestTitle(
-            options
-        )}\n${body}\n\n${PullRequestMarker}`;
+        return `${getPullRequestTitle(options)}\n${body}\n${PullRequestMarker}`;
     }
 
     return body;
