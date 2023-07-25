@@ -222,9 +222,10 @@ function getModifiedFilesCoverageSection(coverage, options) {
         &nbsp; &nbsp; ${modifiedFilesBranchCoverageStatus} Branch Coverage (${modifiedFilesBranchCoverage}) 
     </summary>
     <br />
-    |File|Instructions Coverage (${modifiedFilesInstructionsCoverage})|${modifiedFilesInstructionsCoverageStatus}|Branch Coverage (${modifiedFilesBranchCoverage})|${modifiedFilesBranchCoverageStatus}|
+
+|File|Instructions Coverage (${modifiedFilesInstructionsCoverage})|${modifiedFilesInstructionsCoverageStatus}|Branch Coverage (${modifiedFilesBranchCoverage})|${modifiedFilesBranchCoverageStatus}|
 |:-|:-:|:-:|:-:|:-:|
-            ${coverage.files
+${coverage.files
         .map(cov => {
         const file = formatFileLinkMarkdown(cov.file);
         const fileInstructionsCoverageStatus = getCoverageStatusIcon(cov.instructions.percentage, options.minModifiedFilesInstructionsCoverage);
@@ -275,7 +276,8 @@ function formatCoverage(coverage) {
     return `${parseFloat(coverage.toFixed(2))}%`;
 }
 function formatFileLinkMarkdown(file) {
-    return `[${file.path}](${file.url})`;
+    const fileName = file.path.split('/').pop();
+    return `[${fileName}](${file.url})`;
 }
 
 
