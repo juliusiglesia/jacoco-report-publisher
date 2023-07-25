@@ -77,33 +77,31 @@ function getModifiedFilesCoverageSection(
         &nbsp; &nbsp; ${modifiedFilesBranchCoverageStatus} Branch Coverage (${modifiedFilesBranchCoverage}) 
     </summary>
     <br />
-    |File|Instructions Coverage (${modifiedFilesInstructionsCoverage})|${modifiedFilesInstructionsCoverageStatus}|Branch Coverage (${modifiedFilesBranchCoverage})|${modifiedFilesBranchCoverageStatus}|
+
+|File|Instructions Coverage (${modifiedFilesInstructionsCoverage})|${modifiedFilesInstructionsCoverageStatus}|Branch Coverage (${modifiedFilesBranchCoverage})|${modifiedFilesBranchCoverageStatus}|
 |:-|:-:|:-:|:-:|:-:|
-            ${coverage.files
-                .map(cov => {
-                    const file = formatFileLinkMarkdown(cov.file);
-                    const fileInstructionsCoverageStatus =
-                        getCoverageStatusIcon(
-                            cov.instructions.percentage,
-                            options.minModifiedFilesInstructionsCoverage
-                        );
+${coverage.files
+    .map(cov => {
+        const file = formatFileLinkMarkdown(cov.file);
+        const fileInstructionsCoverageStatus = getCoverageStatusIcon(
+            cov.instructions.percentage,
+            options.minModifiedFilesInstructionsCoverage
+        );
 
-                    const fileInstructionsCoverage = formatCoverage(
-                        cov.instructions.percentage
-                    );
+        const fileInstructionsCoverage = formatCoverage(
+            cov.instructions.percentage
+        );
 
-                    const fileBranchCoverageStatus = getCoverageStatusIcon(
-                        cov.branch.percentage,
-                        options.minModifiedFilesBranchCoverage
-                    );
+        const fileBranchCoverageStatus = getCoverageStatusIcon(
+            cov.branch.percentage,
+            options.minModifiedFilesBranchCoverage
+        );
 
-                    const fileBranchCoverage = formatCoverage(
-                        cov.branch.percentage
-                    );
+        const fileBranchCoverage = formatCoverage(cov.branch.percentage);
 
-                    return `|${file}|${fileInstructionsCoverage}|${fileInstructionsCoverageStatus}|${fileBranchCoverage}|${fileBranchCoverageStatus}|`;
-                })
-                .join('\n')}
+        return `|${file}|${fileInstructionsCoverage}|${fileInstructionsCoverageStatus}|${fileBranchCoverage}|${fileBranchCoverageStatus}|`;
+    })
+    .join('\n')}
 </details>`;
 }
 
@@ -170,5 +168,6 @@ function formatCoverage(coverage: number | null): string {
 }
 
 function formatFileLinkMarkdown(file: File): string {
-    return `[${file.path}](${file.url})`;
+    const fileName = file.path.split('/').pop();
+    return `[${fileName}](${file.url})`;
 }

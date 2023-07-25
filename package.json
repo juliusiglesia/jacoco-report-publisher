@@ -1,6 +1,6 @@
 {
   "name": "jacoco-report-publisher",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "description": "Jacoco Code Coverage Report Publisher",
   "main": "lib/main.js",
